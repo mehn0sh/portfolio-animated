@@ -18,7 +18,7 @@ export default function Parllax({ type }) {
       <motion.h1 style={{y:yText}}>{type === "services" ? "What we do ? " : "What we did ?"}</motion.h1>
       <motion.div className="mountains" style={{backgroundImage:'url("./img/mountains.png")'}}></motion.div>
       <motion.div style={{y:yBg,backgroundImage:`url(${type=='portfolio'&&'./img/sun.png' || './img/planets.png'})`}} className="planets"></motion.div>
-      <motion.div style={{x:yStars}} className="stars"></motion.div>
+      <motion.div style={{x:yStars , backgroundImage:'url("./img/stars.png")'}} className="stars" ></motion.div>
     </motion.div>
   );
 }
